@@ -1,0 +1,24 @@
+{
+  "name": "portal",
+  "version": "1.0.0",
+  "description": "window portal",
+  "main": "server.js",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "react-bootstrap": "^1.0.0-beta.16"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "devStart": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Denny Petersson",
+  "license": "MIT"
+}
